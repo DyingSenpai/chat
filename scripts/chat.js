@@ -67,26 +67,6 @@ function chat(player) {
     videoPlay.ontouchend = function() {
         container.style.display = "flex";
     }
-
-    // if (!player.paused()) {
-    //     container.style.display = "flex";
-    // }
-    // let openChat = createButton("&#9998;");
-
-    // let vjsPicture = document.querySelector(".vjs-picture-in-picture-control");
-    // console.log(vjsPicture);
-    // vjsPicture.parentNode.insertBefore(openChat, vjsPicture.nextSibling);
-
-    // function createButton(icon) {
-    //     let button = document.createElement("button");
-    //     button.classList.add("vjs-menu-button");
-    //     button.innerHTML = icon;
-    //     button.style.fontSize = "1.8em";
-    // }
-
-    // function insertAfter(newEl, element) {
-    //     element.parentNode.insertBefore(newEl, element.nextSibling);
-    // }
         
 }
 videojs.registerPlugin('chat', chat);
